@@ -1,0 +1,30 @@
+{
+  "author": "Franklin van de Meent <fr@nkl.in> (http://frankl.in)",
+  "name": "triodos",
+  "description": "Parse Triodos internet bank statements",
+  "version": "0.1.0",
+  "homepage": "https://github.com/fvdm/nodejs-triodos",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fvdm/nodejs-triodos.git"
+  },
+  "main": "dnsimple.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/fvdm/nodejs-triodos/issues"
+  },
+  "tags": [
+    "triodos",
+    "banking",
+    "finance",
+    "csv"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  }
+}
