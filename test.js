@@ -105,7 +105,7 @@ triodos.on( 'tx', function( tx ) {
 				for( var key in tx ) {
 					if( tx[key] !== expect[t][key] ) {
 						errors++
-						console.log( 'ERROR: event.tx - '+ t +'.'+ key +' \''+ expect[t][key] +'\' !== \''+ tx[key] +'\'' )
+						console.log( 'ERROR: event.tx - '+ t +'.'+ key +' \''+ tx[key] +'\' !== \''+ expect[t][key] +'\'' )
 					}
 				}
 			}
