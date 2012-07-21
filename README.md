@@ -1,8 +1,12 @@
 # nodejs-triodos
 
-Parser voor Triodos data bestanden
+Parser voor [Triodos](https://www.triodos.nl) transactie downloads. 
+
+[![Build Status](https://secure.travis-ci.org/fvdm/nodejs-triodos.png?branch=master)](http://travis-ci.org/fvdm/nodejs-triodos)
 
 # Gebruik
+
+Op de eerste plaats is er een mutations.csv bestand nodig. Deze is te download in [Internet Bankieren](https://bankieren.triodos.nl) -> Overzichten -> Downloaden. Kies bij **bestandsindeling** voor **CSV**. Er wordt een *mutations.csv* bestand gedownload, deze kan gelezen worden met [readCSV()](#readcsv).
 
 Installatie en opzet via NPM:
 
