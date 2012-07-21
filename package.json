@@ -1,6 +1,6 @@
 {
   "author": "Franklin van de Meent <fr@nkl.in> (http://frankl.in)",
-  "name": "triodos",
+  "name": "triodos-csv",
   "description": "Parse Triodos internet bank statements",
   "version": "0.1.0",
   "homepage": "https://github.com/fvdm/nodejs-triodos",
