@@ -67,7 +67,7 @@ app.readCSV = function( filepath, zoek, cb ) {
 			
 		} else {
 			
-			var data = data.split('\r\n')
+			var data = data.split( /[\r\n]+/ )
 			var result = []
 			
 			for( var n in data ) {
