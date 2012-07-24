@@ -46,7 +46,7 @@ app.stats = {
 }
 
 // parse CSV file
-app.readCSV = function( filepath, zoek, cb ) {
+app.openCSV = function( filepath, zoek, cb ) {
 	
 	// fix callback
 	if( !cb && typeof zoek == 'function' ) {
