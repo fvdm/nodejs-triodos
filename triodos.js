@@ -81,7 +81,7 @@ app.openCSV = function( filepath, zoek, cb ) {
 						rekening:		line[1],
 						bedrag:			parseFloat( line[2].replace(',', '.') ),
 						richting:		line[3],
-						ontvanger:		line[4],
+						naam:			line[4],
 						tegenrekening:	line[5],
 						code:			line[6],
 						omschrijving:	line[7]
