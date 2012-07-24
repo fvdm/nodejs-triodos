@@ -114,7 +114,7 @@ triodos.on( 'tx', function( tx ) {
 })
 
 // Test direct callback
-triodos.readCSV( './test.csv', function( txs ) {
+triodos.openCSV( './test.csv', function( txs ) {
 	for( var t in txs ) {
 		for( var key in txs[t] ) {
 			if( txs[t][key] !== expect[t][key] ) {
