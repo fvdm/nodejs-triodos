@@ -45,6 +45,8 @@ app.stats = {
 	min_uit:		{bedrag:0}
 }
 
+app.transacties = []
+
 // parse CSV file
 app.openCSV = function( filepath, zoek, cb ) {
 	
@@ -68,7 +70,6 @@ app.openCSV = function( filepath, zoek, cb ) {
 		} else {
 			
 			var data = data.split( /[\r\n]+/ )
-			var result = []
 			
 			for( var n in data ) {
 				
@@ -111,7 +112,7 @@ app.openCSV = function( filepath, zoek, cb ) {
 					
 					// transaction processed
 					app.emit( 'tx', tx )
-					result.push( tx )
+					app.transacties.push( tx )
 					
 				}
 				
@@ -119,10 +120,10 @@ app.openCSV = function( filepath, zoek, cb ) {
 			
 			// all processed
 			if( typeof cb == 'function' ) {
-				cb( result )
+				cb( app.transacties )
 			}
 			
-			app.emit( 'klaar', result )
+			app.emit( 'klaar', app.transacties )
 		}
 		
 	})
